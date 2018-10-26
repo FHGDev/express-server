@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "discord.js": "latest"
   }
 }
