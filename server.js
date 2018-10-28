@@ -37,8 +37,8 @@ app.post('/', (req, res) => {
 })
 
 function launchWebhook() {
-  require('http').createServer(app).listen(3030)  
-  app.listen(5000)
+  require('http').createServer(app).listen(process.env.PORT)  
+  app.listen(process.env.PORT)
   console.log("Launching...")
   setTimeout(() => {
     console.log("Launched server.")
